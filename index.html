@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eswaran S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      
+        .about-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Fixed Navbar with shadow -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Name on the left -->
+            <a href="#" class="text-purple-900 text-2xl lg:text-3xl xl:text-4xl font-bold">Eswaran Suyamprakasam</a>
+            
+            <!-- Navbar Links on the right (Mobile responsive) -->
+            <div class="hidden md:flex space-x-6">
+               <!-- Navigation Links -->
+<a href="#" class="text-gray-800 hover:text-white hover:bg-purple-600 hover:font-bold hover:shadow-lg hover:scale-105 hover:rounded-md text-sm md:text-lg transition duration-150 ease-in-out px-3 py-2" onclick="showSection('about')">About</a>
+<a href="#" class="text-gray-800 hover:text-white hover:bg-purple-600 hover:font-bold hover:shadow-lg hover:scale-105 hover:rounded-md text-sm md:text-lg transition duration-150 ease-in-out px-3 py-2" onclick="showSection('skills')">Skills</a>
+<a href="#" class="text-gray-800 hover:text-white hover:bg-purple-600 hover:font-bold hover:shadow-lg hover:scale-105 hover:rounded-md text-sm md:text-lg transition duration-150 ease-in-out px-3 py-2" onclick="showSection('projects')">Projects</a>
+<a href="#" class="text-gray-800 hover:text-white hover:bg-purple-600 hover:font-bold hover:shadow-lg hover:scale-105 hover:rounded-md text-sm md:text-lg transition duration-150 ease-in-out px-3 py-2" onclick="showSection('contact')">Contact</a>
+ </div>
+            
+            <!-- Hamburger Icon for Mobile -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-white shadow-md fixed top-16 left-0 w-full z-50 md:hidden">
+        <div class="flex flex-col items-center">
+            <button id="close-menu-button" class="text-gray-800 mt-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <a href="#" class="text-gray-800 text-sm py-2" onclick="showSection('about'); closeMenu();">About</a>
+            <a href="#" class="text-gray-800 text-sm py-2" onclick="showSection('skills'); closeMenu();">Skills</a>
+            <a href="#" class="text-gray-800 text-sm py-2" onclick="showSection('projects'); closeMenu();">Projects</a>
+            <a href="#" class="text-gray-800 text-sm py-2" onclick="showSection('contact'); closeMenu();">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="h-full mt-24 mx-auto max-w-screen-xl px-6 py-12 h-[calc(100vh-4rem)]">
+        <!-- Dynamic content -->
+        <div id="dynamic-content" class="flex h-full items-center justify-center">
+            <!-- Default About Section -->
+            <div id="about" class="hidden w-full bg-white shadow-xl rounded-lg overflow-hidden flex items-center justify-center">
+                <div class="flex flex-col md:flex-row w-full h-full items-center justify-center">
+                    <!-- Image on the left -->
+                    <div class="w-full md:w-1/3 p-8 flex items-center justify-center">
+                        <img src="img/mypic.jpeg" alt="Eswaran Suyamprakasam" class="about-img">
+                    </div>
+
+                    <!-- Text Content on the right -->
+                    <div class="flex-1 p-8 text-center md:text-left">
+                        <div class="flex items-center space-x-4">
+                            <h2 class="text-4xl md:text-6xl font-semibold text-blue-600">
+                                <i class="fa-solid fa-code"></i>
+                            </h2>
+                            <p class="text-xl md:text-2xl font-semibold">JAVA FULL STACK | SPRING BOOT  | LINUX | SPRING | API DEVELOPER | POWER BI | WEB-DEV | AWS | JENKINS | DOCKER | SELENIUM | AUTOMATION TESTING (KATALON)</p>
+                        </div>
+                        <br>
+                        <p class="text-base md:text-lg text-justify leading-normal text-gray-800">
+                            I am a responsible and highly productive individual, always eager to learn new things and take on new challenges. I am committed to developing myself in every way possible, whether it's acquiring new skills or exploring different areas of growth. I thrive on taking initiative and enjoy working on projects that push me to improve and achieve more.
+                        </p>                                           
+                        <br><p class="text-sm md:text-lg mb-4 flex items-center">
+                            <i class="fa-solid fa-location-dot text-red-500 text-xl mr-2"></i> 
+                            - Ariyalur, Tamilnadu, India - 
+                            <a href="https://maps.app.goo.gl/XgWTg4ZDMBqxRZfu7" target="_blank" rel="noopener" class="text-blue-700 hover:text-purple-600 transition duration-150 ease-in-out active:text-red-600">View Here!</a>
+                        </p>
+<!-- College Details Card -->
+<div class="bg-gray-100 p-4 rounded-lg mb-4 flex items-start space-x-4">
+    <i class="fa-solid fa-graduation-cap text-xl md:text-2xl"></i>
+    <div>
+        <p class="text-sm md:text-lg">
+            Paavai Engineering College - 
+            <a href="https://pec.paavai.edu.in/" target="_blank" rel="noopener" class="text-blue-700 hover:text-purple-600 transition duration-150 ease-in-out active:text-red-600">Visit</a><br>
+            Namakkal, Tamilnadu, 637 018 <br>
+            Bachelor of Technology in Information Technology (2021 - 2025)<br>
+            CGPA: 9.2/10
+        </p>
+    </div>
+</div>
+                      
+                        <!-- Contact Details -->
+                        <div class="text-sm md:text-lg mx-auto text-center flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> 
+                                <span>+91 9345152042</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-regular fa-envelope text-red-500 text-xl"></i> 
+                                <a href="mailto:eswar2003.it@gmail.com" class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                                >eswar2003.it@gmail.com</a>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-brands fa-linkedin text-blue-700 text-xl"></i> 
+                                <a href="https://www.linkedin.com/in/Eswaran-S" target="_blank" rel="noopener" class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                                >LinkedIn</a>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i class="fa-brands fa-github text-gray-800 text-xl"></i> 
+                                <a href="https://github.com/Eswaran-it" target="_blank" rel="noopener" class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                                >GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="hidden w-full bg-white shadow-xl rounded-lg p-6 md:p-8">
+                <h2 class="text-4xl text-center mb-6">Contact</h2>
+                <p class="text-2xl text-center mb-4">You can reach me at:</p>
+                
+                <div class="flex flex-col space-y-4 items-center">
+                    <p class="flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-2xl"></i>
+                        <span class="text-lg hover:bg-blue-100  hover:rounded-lg">+91 9345152042</span>
+                    </p>
+
+                    <p class="flex items-center justify-center space-x-2">
+                        <i class="fa-regular fa-envelope text-red-500 text-2xl"></i>
+                        <a href="mailto:eswar2003.it@gmail.com" class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                        >eswar2003.it@gmail.com</a>
+                    </p>
+                    
+
+                    <p class="flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-linkedin text-blue-700 text-2xl"></i>
+                        <a href="https://www.linkedin.com/in/Eswaran-S" target="_blank" rel="noopener" class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                        >LinkedIn</a>
+                    </p>
+
+                    <p class="flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-github text-gray-800 text-2xl"></i>
+                        <a href="https://github.com/Eswaran-it" target="_blank" rel="noopener"class="text-gray-800 hover:text-purple-600 transition duration-150 ease-in-out"
+                        >GitHub</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <section id="skills" class=" px-6 flex items-center justify-center ">
+            <div class="w-full max-w-screen-xl">
+        
+                <!-- Main Skills Card -->
+                <div class="rounded-lg  w-full">
+        
+                    <h2 class="text-3xl font-semibold text-center mb-8">Skills</h2>
+        
+                    <!-- Skill Categories as Cards (Flexbox layout) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+                        <!-- Backend Development Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Backend Development</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">Python</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="Java" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">Java</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" alt="C" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">C</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="C++" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">C++</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" alt="C#" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">C#</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Cloud Platforms Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Cloud Platforms</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">AWS</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">GCP</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">Azure</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Testing Tools Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Testing Tools</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">Selenium</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="data:image/png;base64,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" alt="TestNG" class="hover:scale-110 w-12 h-12 mx-auto" />
+                                    <p class="mt-2">TestNG</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">Postman</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Databases Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Databases</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-12 h-12 hover:scale-110 mx-auto" />
+                                    <p class="mt-2">MySQL</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">MongoDB</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">PostgreSQL</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Frameworks Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Frameworks</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" alt="Spring" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">Spring</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="data:image/png;base64,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" alt="Spring Boot" class="w-12 h-12 mx-auto" />
+                                    <p class="mt-2">Spring Boot</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" class="w-12 h-12 hover:scale-110 mx-auto" />
+                                    <p class="mt-2">React</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Version Control & DevOps Card -->
+                        <div class="bg-gray-100 shadow-md hover:shadow-xl rounded-lg p-6">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Version Control & DevOps</h3>
+                            <div class="flex flex-wrap items-center justify-center gap-6">
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" alt="Docker" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2 ">Docker</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 h-12 hover:scale-110 mx-auto" />
+                                    <p class="mt-2">GitHub</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" class="w-12 hover:scale-110 h-12 mx-auto" />
+                                    <p class="mt-2">Jenkins</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+ <!-- Projects Section -->
+ <section id="projects" class=" px-6 flex flex-col justify-center items-center bg-gray-100">
+    <!-- Title -->
+    <h2 class="text-4xl  mb-12 text-center">Projects</h2>
+    
+    <!-- Single Outer Card -->
+    <div class="w-full max-w-screen-xl flex flex-col justify-center items-center">
+        <!-- Inner Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
+            
+            <!-- Inner Project Card 1 -->
+            <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl flex flex-col">
+                <img src="https://www.mgt-commerce.com/astatic/assets/images/article/2024/805/hero.png?v=1.0.3" alt="Project Image" class="w-full  h-40 object-cover">
+                
+                <!-- Card Content -->
+                <div class="p-6 flex flex-col justify-center items-center">
+                    <h3 class="text-2xl font-semibold text-center text-blue-600 mb-4">Cloud-Based Automated Weekly Report Generator</h3>
+                    <p class="text-gray-700 mb-4 text-center">
+                        An AWS-powered system automating report generation for educational institutions. Uses Lambda, S3, and SES.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-center">
+                        <strong>Skills:</strong> AWS, Lambda, S3, SES, API, Serverless
+                    </p>
+                    <a href="https://github.com/Eswaran-IT/Cloud-Automated-Report" target="_blank" class="text-blue-500 underline text-center">View on GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Inner Project Card 2 -->
+            <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl flex flex-col">
+                <img src="https://www.gravityer.com/_next/image?url=https%3A%2F%2Fvivid-cow-9924242169.media.strapiapp.com%2FKatalon_Studio_739cc14003.png&w=2048&q=75" alt="Project Image" class="w-full h-40 object-cover">
+                
+                <!-- Card Content -->
+                <div class="p-6 flex flex-col justify-center items-center">
+                    <h3 class="text-2xl font-semibold text-center text-green-600 mb-4">SmartBridge Testing Project</h3>
+                    <p class="text-gray-700 mb-4 text-center">
+                        Automates testing for the Craferia site using Katalon Studio. Ensures quality and functionality.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-center">
+                        <strong>Skills:</strong> Katalon Studio, Web Testing, Automation, Groovy, TypeScript
+                    </p>
+                    <a href="https://github.com/Eswaran-IT/SmartBridge_Testing_Project" target="_blank" class="text-blue-500 underline text-center">View on GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- JavaScript to handle dynamic content and mobile menu -->
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('#dynamic-content > div').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Show the default "About" section
+        showSection('about');
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close the menu when the close button is clicked
+        document.getElementById('close-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Close the mobile menu when a link is clicked
+        function closeMenu() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+     
+    // Function to show the selected section and hide others
+    function showSection(sectionId) {
+        const sections = ["about", "skills", "projects", "contact"];
+        sections.forEach(id => {
+            const section = document.getElementById(id);
+            if (section) {
+                section.classList.toggle("hidden", id !== sectionId);
+            }
+        });
+    }
+
+    // Close mobile menu after navigation (if applicable)
+    function closeMenu() {
+        const menu = document.getElementById("mobile-menu");
+        if (menu) {
+            menu.classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>
